@@ -1,29 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Artículos Deportivos
+    <title>Active Edge Sports</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background: #005bb5;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .category,
+        .featured {
+            margin: 20px 0;
+        }
+
+        .product {
+            display: inline-block;
+            width: 30%;
+            padding: 10px;
+            box-shadow: 0 0 10px gray;
+            margin: 10px;
+        }
+    </style>
     </title>
-    
+
 </head>
+
 <body>
     <header>
-        <h1>Tienda Deportiva</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Sobre Nosotros</a></li>
-            </ul>
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Nosotros</a>
+            <a href="#categories">Categorías</a>
+            <a href="#featured">Destacados</a>
+            <a href="#contact">Contacto</a>
         </nav>
+        <div class="container">
+            <section id="home">
+                <h2>Bienvenido a Active Edge Sports</h2>
+                <p>Encuentra el mejor equipo deportivo para alcanzar tu máximo rendimiento. Ofrecemos productos de alta
+                    calidad para atletas de todos los niveles.</p>
+            </section>
+            <section id="categories" class="category">
+                <h2>Categorías de Productos</h2>
     </header>
-    
+
     <main>
         <section>
             <h2>Bienvenidos a nuestra tienda</h2>
             <p>Ofrecemos los mejores productos deportivos para mejorar tu rendimiento y bienestar.</p>
         </section>
-        
+
         <section>
             <h2>Productos Destacados</h2>
             <ul>
@@ -33,9 +87,15 @@
             </ul>
         </section>
     </main>
-    
+
     <footer>
         <p>&copy; 2025 Tienda Deportiva</p>
     </footer>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Email: contacto@activeedgesports.com</p>
+        <p>Teléfono: +123 456 7890</p>
+    </section>
 </body>
+
 </html>
